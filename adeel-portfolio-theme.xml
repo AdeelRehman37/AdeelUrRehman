@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html b:version="2"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://www.google.com/2005/gml/b"
+      xmlns:data="http://www.google.com/2005/gml/data"
+      xmlns:expr="http://www.google.com/2005/gml/expr">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title><data:blog.pageTitle/></title>
+
+  <b:skin><![CDATA[
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:Inter,Arial,sans-serif;
+      background:#0A0E27;
+      color:#E2E8F0;
+      overflow-x:hidden;
+    }
+    a{text-decoration:none;color:inherit}
+
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      padding:20px 5%;
+      background:rgba(10,14,39,.9);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+    }
+    .logo{
+      font-size:22px;
+      font-weight:700;
+      color:#8B5CF6;
+    }
+    .nav-links{
+      display:flex;
+      gap:20px;
+      list-style:none;
+    }
+    .nav-links a{
+      color:#94A3B8;
+      font-size:14px;
+    }
+    .nav-links a:hover{color:#fff}
+
+    section{
+      padding:100px 5%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      text-align:center;
+    }
+    .hero h1{
+      font-size:48px;
+      margin-bottom:20px;
+    }
+    .hero span{
+      color:#8B5CF6;
+    }
+    .hero p{
+      color:#94A3B8;
+      font-size:18px;
+      max-width:600px;
+      margin:auto;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:15px 40px;
+      border-radius:40px;
+      background:linear-gradient(135deg,#6366F1,#8B5CF6);
+      color:#fff;
+      font-weight:600;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+    .section-title h2{
+      font-size:36px;
+      margin-bottom:10px;
+    }
+    .section-title p{
+      color:#94A3B8;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+    .card{
+      background:#1E293B;
+      padding:30px;
+      border-radius:20px;
+      transition:.3s;
+    }
+    .card:hover{
+      transform:translateY(-10px);
+      background:#334155;
+    }
+    .card h3{margin-bottom:10px}
+
+    .process{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:20px;
+      text-align:center;
+    }
+    .step{
+      background:#1E293B;
+      padding:25px;
+      border-radius:20px;
+    }
+
+    .tools{
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      flex-wrap:wrap;
+      text-align:center;
+    }
+    .tool-box{
+      background:#1E293B;
+      padding:25px 40px;
+      border-radius:20px;
+    }
+
+    .cta{
+      background:#1E293B;
+      text-align:center;
+      padding:80px 5%;
+      border-radius:30px;
+      margin:80px 5%;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px;
+      color:#94A3B8;
+    }
+
+    @media(max-width:768px){
+      .nav-links{display:none}
+      .hero h1{font-size:36px}
+    }
+  ]]></b:skin>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Adeel.</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<b:section id="main" class="main" showaddelement="no">
+<b:widget id="HTML1" locked="true" title="Portfolio" type="HTML">
+<b:includable id="main">
+
+<section class="hero" id="home">
+  <h1>Designing <span>Digital Experiences</span></h1>
+  <p>UI/UX Designer crafting mobile apps and landing pages that users love and businesses trust.</p>
+  <a class="btn" href="#contact">Hire Me</a>
+</section>
+
+<section id="about">
+  <div class="section-title">
+    <h2>About Me</h2>
+    <p>User-centered designer with strong UI & UX fundamentals</p>
+  </div>
+  <p style="text-align:center;max-width:700px;margin:auto;color:#94A3B8;">
+    I'm Adeel ur Rehman, a UI/UX Designer specializing in mobile apps and landing pages.
+    I create intuitive experiences using user journeys, wireframes, design systems, and prototypes.
+  </p>
+</section>
+
+<section id="services">
+  <div class="section-title">
+    <h2>Services</h2>
+    <p>From idea to polished interface</p>
+  </div>
+  <div class="services">
+    <div class="card"><h3>UI Design</h3><p>Clean, modern interfaces</p></div>
+    <div class="card"><h3>UX Design</h3><p>Research-driven experience</p></div>
+    <div class="card"><h3>User Journeys</h3><p>Flow-focused design</p></div>
+    <div class="card"><h3>Wireframing</h3><p>Low & high fidelity</p></div>
+    <div class="card"><h3>Prototyping</h3><p>Interactive testing</p></div>
+    <div class="card"><h3>Web & App</h3><p>Responsive solutions</p></div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="section-title">
+    <h2>Process</h2>
+  </div>
+  <div class="process">
+    <div class="step">Research</div>
+    <div class="step">Wireframe</div>
+    <div class="step">Design</div>
+    <div class="step">Prototype</div>
+    <div class="step">Test</div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <h2>Let’s Work Together</h2>
+  <p style="margin:20px 0;color:#94A3B8;">Ready to turn ideas into experiences</p>
+  <a class="btn" href="mailto:adeel@example.com">Contact Me</a>
+</section>
+
+<footer>
+  © 2026 Adeel ur Rehman — UI/UX Designer
+</footer>
+
+<script type="text/javascript">
+//<![CDATA[
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+a.addEventListener('click',function(e){
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+});
+});
+//]]>
+</script>
+
+</b:includable>
+</b:widget>
+</b:section>
+
+</body>
+</html>
